@@ -1,5 +1,5 @@
 {
-  "readAt": "2026-05-05T19:37:55Z",
+  "readAt": "2026-05-05T20:10:50Z",
   "postcodes": [
     "35390",
     "35392",
@@ -42,7 +42,7 @@
     "tankstelle"
   ],
   "maxResults": 0,
-  "headless": false,
+  "headless": true,
   "discoveryOnly": false,
   "scrapeOnly": true,
   "rescrapeAll": false,
@@ -57,8 +57,8 @@
   "output": "output/places.json",
   "csv": "output/places.csv",
   "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
-  "discovered": 742,
-  "rows": 742,
-  "success": 34,
-  "errors": 708
+  "discovered": 797,
+  "rows": 797,
+  "success": 797,
+  "errors": 0
 }
