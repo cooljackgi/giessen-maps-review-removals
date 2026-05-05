@@ -1,5 +1,6 @@
 const DATA = JSON.parse(document.getElementById('placesData').textContent);
-const BEZIRKE = JSON.parse(document.getElementById('bezirkData').textContent);
+const parsedBezirke = JSON.parse(document.getElementById('bezirkData').textContent);
+const BEZIRKE = Array.isArray(parsedBezirke) ? parsedBezirke : [];
 const valid = DATA.filter(row => Number.isFinite(row.rating) && Number.isFinite(row.reviewCount));
 const fmt = new Intl.NumberFormat('de-DE');
 const fmt1 = new Intl.NumberFormat('de-DE', { maximumFractionDigits: 1, minimumFractionDigits: 1 });
