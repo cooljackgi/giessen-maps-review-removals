@@ -4,7 +4,7 @@ Quelle: Google Maps, öffentlich sichtbare Diffamierungs-Banner. Snapshot: 05.05
 
 Sortierung: geschätzter Mittelpunkt der Google-Bereiche absteigend. „Über 250“ wird als 300 geschätzt.
 
-Einträge mit Banner: 56
+Einträge mit Banner: 59
 
 | Rang | Name | PLZ | Rating | Rezensionen | Gelöscht | Schätzwert | Löschquote | Worst-Case-Rating |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|
@@ -46,21 +46,24 @@ Einträge mit Banner: 56
 | 36 | Beklen's Grill Gießen | 35390 | 4,6 | 201 | 6–10 | 8,0 | 3,8% | 4,46 |
 | 37 | at Eleven. | 35390 | 4,8 | 170 | 6–10 | 8,0 | 4,5% | 4,63 |
 | 38 | Balkan Grill Giessen | 35390 | 4,3 | 96 | 6–10 | 8,0 | 7,7% | 4,05 |
-| 39 | Das Kampfkunstzentrum - Gießen | 35390 | 4,6 | 9 | 6–10 | 8,0 | 47,1% | 2,91 |
-| 40 | REYNABİ DÖNER Grünbergerstraße | 35390 | 4,8 | 1.210 | 2–5 | 3,5 | 0,3% | 4,79 |
-| 41 | REYNABİ DÖNER Dammstraße | 35390 | 4,8 | 626 | 2–5 | 3,5 | 0,6% | 4,78 |
-| 42 | Damaskus-Shisha Shop / Dampfwerk24.de | 35390 | 4,8 | 238 | 2–5 | 3,5 | 1,4% | 4,75 |
-| 43 | Friseursalon Gießen MEN Haarstylisten | 35390 | 4,8 | 213 | 2–5 | 3,5 | 1,6% | 4,74 |
-| 44 | Schönheitszentrum Mittelhessen | 35390 | 4,9 | 152 | 2–5 | 3,5 | 2,2% | 4,81 |
-| 45 | KopfKultur | 35390 | 4,8 | 150 | 2–5 | 3,5 | 2,3% | 4,71 |
-| 46 | Pablo \| Dein Pizza Dealer | 35390 | 4,5 | 146 | 2–5 | 3,5 | 2,3% | 4,42 |
-| 47 | Schnitzelhaus | 35390 | 3,9 | 141 | 2–5 | 3,5 | 2,4% | 3,83 |
-| 48 | Zum Schnitt | 35390 | 4,8 | 87 | 2–5 | 3,5 | 3,9% | 4,65 |
-| 49 | Unikat Gießen – Premium Friseur ohne Termin \| Stil & Präzision | 35390 | 4,8 | 67 | 2–5 | 3,5 | 5,0% | 4,61 |
-| 50 | burgerme Gießen | 35390 | 4,7 | 32 | 2–5 | 3,5 | 9,9% | 4,33 |
-| 51 | Kelmendi Giessen Balkan Spezialitãten | 35390 | 4,9 | 20 | 2–5 | 3,5 | 14,9% | 4,32 |
-| 52 | Millerhaus | 35390 | 4,1 | 3.770 | 1 | 1,0 | 0,0% | 4,10 |
-| 53 | Restaurant & Pizzeria Olive Gießen | 35390 | 4,3 | 1.017 | 1 | 1,0 | 0,1% | 4,30 |
-| 54 | TRINITY Club | 35390 | 3,8 | 140 | 1 | 1,0 | 0,7% | 3,78 |
-| 55 | New'Ro Kitchen | 35390 | 4,9 | 61 | 1 | 1,0 | 1,6% | 4,84 |
-| 56 | SPORT-HAUS Gießen | 35390 | 5,0 | 54 | 1 | 1,0 | 1,8% | 4,93 |
+| 39 | Turhan Grill | 35392 | 4,5 | 40 | 6–10 | 8,0 | 16,7% | 3,92 |
+| 40 | Das Kampfkunstzentrum - Gießen | 35390 | 4,6 | 9 | 6–10 | 8,0 | 47,1% | 2,91 |
+| 41 | REYNABİ DÖNER Grünbergerstraße | 35390 | 4,8 | 1.210 | 2–5 | 3,5 | 0,3% | 4,79 |
+| 42 | REYNABİ DÖNER Dammstraße | 35390 | 4,8 | 626 | 2–5 | 3,5 | 0,6% | 4,78 |
+| 43 | Damaskus-Shisha Shop / Dampfwerk24.de | 35390 | 4,8 | 238 | 2–5 | 3,5 | 1,4% | 4,75 |
+| 44 | Friseursalon Gießen MEN Haarstylisten | 35390 | 4,8 | 213 | 2–5 | 3,5 | 1,6% | 4,74 |
+| 45 | Schönheitszentrum Mittelhessen | 35390 | 4,9 | 152 | 2–5 | 3,5 | 2,2% | 4,81 |
+| 46 | KopfKultur | 35390 | 4,8 | 150 | 2–5 | 3,5 | 2,3% | 4,71 |
+| 47 | Pablo \| Dein Pizza Dealer | 35390 | 4,5 | 146 | 2–5 | 3,5 | 2,3% | 4,42 |
+| 48 | Schnitzelhaus | 35390 | 3,9 | 141 | 2–5 | 3,5 | 2,4% | 3,83 |
+| 49 | Zum Schnitt | 35390 | 4,8 | 87 | 2–5 | 3,5 | 3,9% | 4,65 |
+| 50 | Unikat Gießen – Premium Friseur ohne Termin \| Stil & Präzision | 35390 | 4,8 | 67 | 2–5 | 3,5 | 5,0% | 4,61 |
+| 51 | Uzbek Haus | 35392 | 4,7 | 51 | 2–5 | 3,5 | 6,4% | 4,46 |
+| 52 | burgerme Gießen | 35390 | 4,7 | 32 | 2–5 | 3,5 | 9,9% | 4,33 |
+| 53 | Kelmendi Giessen Balkan Spezialitãten | 35390 | 4,9 | 20 | 2–5 | 3,5 | 14,9% | 4,32 |
+| 54 | Millerhaus | 35390 | 4,1 | 3.770 | 1 | 1,0 | 0,0% | 4,10 |
+| 55 | Restaurant & Pizzeria Olive Gießen | 35390 | 4,3 | 1.017 | 1 | 1,0 | 0,1% | 4,30 |
+| 56 | Esso | 35390 | 4,1 | 300 | 1 | 1,0 | 0,3% | 4,09 |
+| 57 | TRINITY Club | 35390 | 3,8 | 140 | 1 | 1,0 | 0,7% | 3,78 |
+| 58 | New'Ro Kitchen | 35390 | 4,9 | 61 | 1 | 1,0 | 1,6% | 4,84 |
+| 59 | SPORT-HAUS Gießen | 35390 | 5,0 | 54 | 1 | 1,0 | 1,8% | 4,93 |
