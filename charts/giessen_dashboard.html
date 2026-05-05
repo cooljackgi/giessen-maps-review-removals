@@ -293,12 +293,12 @@
   </section>
 
   <main>
-    <section class="chips" aria-label="Quick-Filter"><button type="button" class="chip" data-chip="banner">🔴 Mit Löschbanner</button><button type="button" class="chip" data-chip="gastro">🍽️ Gastronomie</button><button type="button" class="chip" data-chip="nachtleben">🎉 Nachtleben</button><button type="button" class="chip" data-chip="beauty">💇 Beauty &amp; Wellness</button><button type="button" class="chip" data-chip="hotels">🏨 Beherbergung</button><button type="button" class="chip" data-chip="gesundheit">🏥 Gesundheit</button><button type="button" class="chip" data-chip="altstadt">🗺️ Altstadt</button></section>
+    <section class="chips" aria-label="Quick-Filter"><button type="button" class="chip" data-chip="banner">🔴 Mit Löschbanner</button><button type="button" class="chip" data-chip="gastro">🍽️ Gastronomie</button><button type="button" class="chip" data-chip="nachtleben">🎉 Nachtleben</button><button type="button" class="chip" data-chip="beauty">💇 Beauty &amp; Wellness</button><button type="button" class="chip" data-chip="hotels">🏨 Beherbergung</button><button type="button" class="chip" data-chip="gesundheit">🏥 Gesundheit</button></section>
     <section class="controls is-collapsed" id="dashboardFilterControls" aria-label="Dashboard-Filter">
       <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="false" aria-controls="dashboardFilterControls"><span><strong>Filter</strong><span class="filter-summary" id="filterSummary">Keine aktiven Filter</span></span><span class="filter-toggle-icon" aria-hidden="true">▾</span></button>
       <div class="control search"><label for="searchInput">Suche</label><input id="searchInput" type="search" placeholder="Name, PLZ, Kategorie, Löschbereich …" autocomplete="off"></div>
       <div class="control"><label for="postcodeFilter">PLZ</label><select id="postcodeFilter"><option value="">Alle PLZ</option><option value="35390">35390</option></select></div>
-      <div class="control"><label for="bezirkFilter">Bezirk</label><select id="bezirkFilter"><option value="">Alle Bezirke</option><option value="__none__">Ohne Bezirk</option></select></div>
+      <div class="control"><label for="bezirkFilter">Stadtteil</label><select id="bezirkFilter"><option value="">Alle Stadtteile</option><option value="__none__">Ohne Stadtteil</option></select></div>
       <div class="control"><label for="bannerFilter">Banner</label><select id="bannerFilter"><option value="all">Alle</option><option value="banner">Mit Banner</option><option value="clean">Ohne Banner</option></select></div>
       <div class="control"><label for="rangeFilter">Gelöscht</label><select id="rangeFilter"><option value="">Alle Bereiche</option><option value="201–250">201–250</option><option value="21–50">21–50</option><option value="11–20">11–20</option><option value="6–10">6–10</option></select></div>
       <div class="control"><label for="categoryFilter">Kategorie</label><select id="categoryFilter"><option value="">Alle Kategorien</option><option value="parent:Gastronomie">Gastronomie</option><option value="Restaurant">&nbsp;&nbsp;Restaurant</option><option value="Café / Konditorei">&nbsp;&nbsp;Café / Konditorei</option><option value="Burger">&nbsp;&nbsp;Burger</option><option value="parent:Nachtleben">Nachtleben</option><option value="Bar / Kneipe">&nbsp;&nbsp;Bar / Kneipe</option></select></div>
@@ -323,15 +323,15 @@
 
     <section class="card dist" aria-label="Verteilung"><h2>Verteilung der Lösch-Stufen</h2><div id="distribution"></div></section>
 
-    <section class="card bezirk-summary" aria-label="Bezirks-Gruppen"><h2>Gruppierung nach statistischem Bezirk</h2><p>Top-Bezirke im aktuellen Filter, sortiert nach Banner-Anteil. Anklicken setzt den Bezirksfilter.</p><div class="bezirk-list" id="bezirkSummary"></div></section>
+    <section class="card bezirk-summary" aria-label="Stadtteil-Gruppen"><h2>Gruppierung nach Stadtteil</h2><p>Stadtteile im aktuellen Filter, sortiert nach Banner-Anteil. Anklicken setzt den Stadtteilfilter.</p><div class="bezirk-list" id="bezirkSummary"></div></section>
 
     <section class="card bezirk-summary" aria-label="Kategorie-Gruppen"><h2>Gruppierung nach Kategorie</h2><p>Übergeordnete Kategorie-Gruppen im aktuellen Filter, sortiert nach Banner-Anteil.</p><div class="bezirk-list" id="parentSummary"></div></section>
 
     <section class="card map-panel" aria-label="Karte">
       <h2>Karte der erfassten Orte</h2>
-      <p><span id="mapCount">–</span> Orte mit Koordinaten im aktuellen Filter. Marker anklicken markiert Einträge; Bezirksflächen anklicken setzt den Bezirkfilter.</p>
+      <p><span id="mapCount">–</span> Orte mit Koordinaten im aktuellen Filter. Marker anklicken markiert Einträge.</p>
       <div id="placesMap"><div class="map-empty">Karte wird geladen …</div></div>
-      <div class="map-legend"><span><i class="legend-area"></i>Bezirk, klickbar</span><span><i class="legend-dot" style="background:#1f6f8b"></i>dein Standort</span><span><i class="legend-dot" style="background:#c9332c"></i>hohe Lösch-Quote</span><span><i class="legend-dot" style="background:#ef7d16"></i>sichtbarer Banner</span><span><i class="legend-dot" style="background:#2d7b3f"></i>kein sichtbarer Banner</span></div>
+      <div class="map-legend"><span><i class="legend-dot" style="background:#1f6f8b"></i>dein Standort</span><span><i class="legend-dot" style="background:#c9332c"></i>hohe Lösch-Quote</span><span><i class="legend-dot" style="background:#ef7d16"></i>sichtbarer Banner</span><span><i class="legend-dot" style="background:#2d7b3f"></i>kein sichtbarer Banner</span></div>
     </section>
 
     <nav class="tabs" aria-label="Tabellen-Presets">
@@ -351,7 +351,7 @@
         <thead><tr>
           <th class="rank"><button data-sort="rank">Rang <span class="arrow"></span></button></th>
           <th><button data-sort="name">Name / Google Maps <span class="arrow"></span></button></th>
-          <th><button data-sort="bezirkLabel">Bezirk <span class="arrow"></span></button></th>
+          <th><button data-sort="bezirkLabel">Stadtteil <span class="arrow"></span></button></th>
           <th><button data-sort="postcode">PLZ <span class="arrow"></span></button></th>
           <th class="num"><button data-sort="rating">Rating <span class="arrow"></span></button></th>
           <th class="num"><button data-sort="reviewCount">Rezensionen <span class="arrow"></span></button></th>
@@ -384,6 +384,10 @@ const fmt = new Intl.NumberFormat('de-DE');
 const fmt1 = new Intl.NumberFormat('de-DE', { maximumFractionDigits: 1, minimumFractionDigits: 1 });
 const fmt2 = new Intl.NumberFormat('de-DE', { maximumFractionDigits: 2, minimumFractionDigits: 2 });
 const fmtDateTime = new Intl.DateTimeFormat('de-DE', { dateStyle: 'short', timeStyle: 'short' });
+const DISTRICT_LABEL = 'Stadtteil';
+const DISTRICT_NONE_LABEL = 'Ohne Stadtteil';
+const DISTRICT_EMPTY_MESSAGE = 'Keine stadtteildaten im Filter.';
+const CITY_CENTER = [50.5841, 8.6784];
 const state = { mode: 'ratio', sortKey: 'deletionRatioPct', sortDir: 'desc', userLocation: null };
 const els = {
   themeToggle: document.getElementById('themeToggle'), controls: document.getElementById('dashboardFilterControls'), filterToggle: document.getElementById('filterToggle'), filterSummary: document.getElementById('filterSummary'), search: document.getElementById('searchInput'), postcode: document.getElementById('postcodeFilter'), bezirk: document.getElementById('bezirkFilter'), banner: document.getElementById('bannerFilter'), range: document.getElementById('rangeFilter'), category: document.getElementById('categoryFilter'), minReviews: document.getElementById('minReviews'), reset: document.getElementById('resetFilters'), tbody: document.querySelector('#placesTable tbody'), resultCount: document.getElementById('resultCount'), tableTitle: document.getElementById('tableTitle'), mapCount: document.getElementById('mapCount'), nearbyStatus: document.getElementById('nearbyStatus')
@@ -479,7 +483,7 @@ function activeFilterSummary() {
   const parts = [];
   if (els.search.value.trim()) parts.push('Suche');
   if (els.postcode.value) parts.push(els.postcode.value);
-  if (els.bezirk.value) parts.push(els.bezirk.value === '__none__' ? 'Ohne Bezirk' : selectedOptionLabel(els.bezirk));
+  if (els.bezirk.value) parts.push(els.bezirk.value === '__none__' ? DISTRICT_NONE_LABEL : selectedOptionLabel(els.bezirk));
   if (els.banner.value !== 'all') parts.push(selectedOptionLabel(els.banner));
   if (els.range.value) parts.push(els.range.value);
   if (els.category.value) parts.push(selectedOptionLabel(els.category));
@@ -642,7 +646,7 @@ function initMap() {
     return false;
   }
   root.innerHTML = '';
-  placesMap = L.map(root, { scrollWheelZoom: false, touchZoom: true }).setView([49.4521, 11.0767], 12);
+  placesMap = L.map(root, { scrollWheelZoom: false, touchZoom: true }).setView(CITY_CENTER, 12);
   placesMap.createPane('bezirkPane');
   placesMap.getPane('bezirkPane').style.zIndex = 350;
   placesMap.createPane('placeMarkerPane');
@@ -747,7 +751,7 @@ function renderMap(rows, allFilteredRows) {
   } else {
     const districtBounds = bezirkBounds(selectedBezirkLabel());
     if (districtBounds) placesMap.fitBounds(districtBounds.pad(0.18), { maxZoom: 14, animate: false });
-    else placesMap.setView([49.4521, 11.0767], 12);
+    else placesMap.setView(CITY_CENTER, 12);
   }
 }
 function renderBars(id, mode, rows, metric, label, color, maxValue) {
@@ -766,7 +770,7 @@ function renderDistribution(rows) {
 function renderBezirkSummary(rows) {
   const groups = new Map();
   for (const row of rows) {
-    const label = row.bezirkLabel || 'Ohne Bezirk';
+    const label = row.bezirkLabel || DISTRICT_NONE_LABEL;
     if (!groups.has(label)) groups.set(label, { label, rows: 0, banners: 0, removed: 0 });
     const group = groups.get(label);
     group.rows += 1;
@@ -775,8 +779,8 @@ function renderBezirkSummary(rows) {
       group.removed += row.removedEstimate || 0;
     }
   }
-  const items = [...groups.values()].sort((a, b) => (a.label === 'Ohne Bezirk') - (b.label === 'Ohne Bezirk') || (b.banners / Math.max(b.rows, 1)) - (a.banners / Math.max(a.rows, 1)) || b.banners - a.banners || b.rows - a.rows).slice(0, 12);
-  document.getElementById('bezirkSummary').innerHTML = items.map(item => '<button type="button" class="bezirk-row" data-bezirk="' + esc(item.label) + '"><strong>' + esc(item.label) + '</strong><span>' + n(item.rows) + ' Orte</span><span>' + n(item.banners) + ' Banner</span><span>' + pct(item.banners / Math.max(item.rows, 1) * 100) + '</span></button>').join('') || '<p>Keine Bezirksdaten im Filter.</p>';
+  const items = [...groups.values()].sort((a, b) => (a.label === DISTRICT_NONE_LABEL) - (b.label === DISTRICT_NONE_LABEL) || (b.banners / Math.max(b.rows, 1)) - (a.banners / Math.max(a.rows, 1)) || b.banners - a.banners || b.rows - a.rows).slice(0, 12);
+  document.getElementById('bezirkSummary').innerHTML = items.map(item => '<button type="button" class="bezirk-row" data-bezirk="' + esc(item.label) + '"><strong>' + esc(item.label) + '</strong><span>' + n(item.rows) + ' Orte</span><span>' + n(item.banners) + ' Banner</span><span>' + pct(item.banners / Math.max(item.rows, 1) * 100) + '</span></button>').join('') || '<p>' + esc(DISTRICT_EMPTY_MESSAGE) + '</p>';
 }
 function renderParentSummary(rows) {
   const groups = new Map();
@@ -859,7 +863,7 @@ document.querySelectorAll('.bars').forEach(root => root.addEventListener('click'
 document.getElementById('bezirkSummary').addEventListener('click', event => {
   const row = event.target.closest('.bezirk-row');
   if (!row) return;
-  els.bezirk.value = row.dataset.bezirk === 'Ohne Bezirk' ? '__none__' : row.dataset.bezirk;
+  els.bezirk.value = row.dataset.bezirk === DISTRICT_NONE_LABEL ? '__none__' : row.dataset.bezirk;
   render();
   document.getElementById('placesTable').scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
@@ -918,7 +922,6 @@ document.querySelector('.chips').addEventListener('click', event => {
       case 'beauty': els.category.value = 'parent:Beauty & Wellness'; break;
       case 'hotels': els.category.value = 'parent:Beherbergung'; break;
       case 'gesundheit': els.category.value = 'parent:Gesundheit'; break;
-      case 'altstadt': els.bezirk.value = 'Altstadt, St. Lorenz'; break;
     }
   }
   render();
@@ -928,7 +931,6 @@ function updateSubChips(mode) {
   const configs = {
     all: [
       { label: '🔴 Mit Banner', test: () => els.banner.value === 'banner', apply: v => { els.banner.value = v ? 'banner' : 'all'; } },
-      { label: '🗺️ Altstadt', test: () => els.bezirk.value === 'Altstadt, St. Lorenz', apply: v => { els.bezirk.value = v ? 'Altstadt, St. Lorenz' : ''; } },
     ],
     ratio: [
       { label: 'Min. 50 Rez.', test: () => Number(els.minReviews.value) === 50, apply: v => { els.minReviews.value = v ? 50 : 0; } },
@@ -957,7 +959,6 @@ function updateSubChips(mode) {
       { label: 'Min. 500 Rez.', test: () => Number(els.minReviews.value) === 500, apply: v => { els.minReviews.value = v ? 500 : 0; } },
       { label: '🍽️ Nur Gastro', test: () => els.category.value === 'parent:Gastronomie', apply: v => { els.category.value = v ? 'parent:Gastronomie' : ''; } },
       { label: '🏨 Nur Hotels', test: () => els.category.value === 'parent:Beherbergung', apply: v => { els.category.value = v ? 'parent:Beherbergung' : ''; } },
-      { label: '🗺️ Altstadt', test: () => els.bezirk.value === 'Altstadt, St. Lorenz', apply: v => { els.bezirk.value = v ? 'Altstadt, St. Lorenz' : ''; } },
     ],
     nearby: [
       { label: '🔴 Nur mit Banner', test: () => els.banner.value === 'banner', apply: v => { els.banner.value = v ? 'banner' : 'all'; } },
