@@ -1,0 +1,29 @@
+{
+  "readAt": "2026-05-05T18:24:15Z",
+  "postcodes": [
+    "35390"
+  ],
+  "queries": [
+    "restaurant"
+  ],
+  "maxResults": 30,
+  "headless": false,
+  "discoveryOnly": false,
+  "scrapeOnly": false,
+  "rescrapeAll": false,
+  "bannerAuditOnly": false,
+  "allowBannerClears": false,
+  "noticeAttempts": 2,
+  "scrapeStart": 1,
+  "scrapeLimit": 0,
+  "saveEvery": 1,
+  "delayMin": 2500,
+  "delayMax": 6000,
+  "output": "output/places.json",
+  "csv": "output/places.csv",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+  "discovered": 12,
+  "rows": 12,
+  "success": 12,
+  "errors": 0
+}
