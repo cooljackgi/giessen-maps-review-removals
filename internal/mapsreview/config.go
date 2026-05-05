@@ -9,6 +9,8 @@ type CityConfig struct {
 	DefaultPostcodes []string
 	DistrictLabel    string
 	DistrictsEnabled bool
+	CenterLat        float64
+	CenterLng        float64
 }
 
 var ActiveCity = CityConfig{
@@ -18,6 +20,8 @@ var ActiveCity = CityConfig{
 	DefaultPostcodes: []string{"35390", "35392", "35394", "35396", "35398"},
 	DistrictLabel:    "Stadtteil",
 	DistrictsEnabled: false,
+	CenterLat:        50.5841,
+	CenterLng:        8.6784,
 }
 
 var DefaultPostcodeSet = func() map[string]bool {

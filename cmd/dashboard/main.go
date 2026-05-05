@@ -149,7 +149,7 @@ func makeClientRows(rows []mapsreview.Place) []clientRow {
 			Rating:             row.Rating,
 			ReviewCount:        row.ReviewCount,
 			Category:           mapsreview.StringValue(row.Category),
-			ParentCategory:      mapsreview.StringValue(row.ParentCategory),
+			ParentCategory:     mapsreview.StringValue(row.ParentCategory),
 			HasBanner:          row.HasDefamationNotice,
 			RemovedRange:       mapsreview.RemovedRange(row),
 			RemovedMin:         row.RemovedMin,
@@ -188,7 +188,7 @@ func makeHTML(data []clientRow) string {
 	}
 	bezirkOptions := ""
 	if countRows(data, func(row clientRow) bool { return row.BezirkLabel == "" }) > 0 {
-		bezirkOptions += `<option value="__none__">Ohne Bezirk</option>`
+		bezirkOptions += fmt.Sprintf(`<option value="__none__">Ohne %s</option>`, esc(mapsreview.ActiveCity.DistrictLabel))
 	}
 	for _, bezirk := range bezirke {
 		bezirkOptions += fmt.Sprintf(`<option value="%s">%s</option>`, escAttr(bezirk), esc(bezirk))
@@ -241,12 +241,25 @@ func makeHTML(data []clientRow) string {
 		}
 	}
 
+	districtLabel := mapsreview.ActiveCity.DistrictLabel
+	districtPlural := districtPluralLabel()
+	quickChips := `<button type="button" class="chip" data-chip="banner">🔴 Mit Löschbanner</button><button type="button" class="chip" data-chip="gastro">🍽️ Gastronomie</button><button type="button" class="chip" data-chip="nachtleben">🎉 Nachtleben</button><button type="button" class="chip" data-chip="beauty">💇 Beauty &amp; Wellness</button><button type="button" class="chip" data-chip="hotels">🏨 Beherbergung</button><button type="button" class="chip" data-chip="gesundheit">🏥 Gesundheit</button>`
+	districtSummaryHeading := "Gruppierung nach " + districtLabel
+	districtSummaryCopy := districtPlural + ` im aktuellen Filter, sortiert nach Banner-Anteil. Anklicken setzt den ` + districtLabel + `filter.`
+	mapCopy := `<span id="mapCount">–</span> Orte mit Koordinaten im aktuellen Filter. Marker anklicken markiert Einträge.`
+	mapLegend := `<span><i class="legend-dot" style="background:#1f6f8b"></i>dein Standort</span><span><i class="legend-dot" style="background:#c9332c"></i>hohe Lösch-Quote</span><span><i class="legend-dot" style="background:#ef7d16"></i>sichtbarer Banner</span><span><i class="legend-dot" style="background:#2d7b3f"></i>kein sichtbarer Banner</span>`
+	if mapsreview.ActiveCity.DistrictsEnabled {
+		districtSummaryHeading = "Gruppierung nach statistischem " + districtLabel
+		mapCopy = `<span id="mapCount">–</span> Orte mit Koordinaten im aktuellen Filter. Marker anklicken markiert Einträge; ` + districtPlural + `flächen anklicken setzt den ` + districtLabel + `filter.`
+		mapLegend = `<span><i class="legend-area"></i>` + districtLabel + `, klickbar</span>` + mapLegend
+	}
+
 	page := `<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nürnberg Google-Maps-Bewertungen Dashboard</title>
+  <title>__CITY_NAME__ Google-Maps-Bewertungen Dashboard</title>
 __ANALYTICS__
   <script>
     (function () {
@@ -524,24 +537,24 @@ __ANALYTICS__
     <div class="sitebar-inner">
       <div class="top-icons" aria-hidden="true"><span>●</span><span>☝</span><span>▰</span></div>
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Dunkles Design aktivieren" aria-pressed="false"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-text">Dunkel</span></button>
-      <div class="n-logo">Nürnberg</div>
+      <div class="n-logo">__CITY_NAME__</div>
     </div>
   </div>
 
   <section class="hero" aria-label="Seitentitel">
     <div class="hero-inner">
-      <div class="hero-title">Nürnberg Google-Maps-Bewertungen</div>
+      <div class="hero-title">__CITY_NAME__ Google-Maps-Bewertungen</div>
       <div class="hero-subtitle">Interaktives Daten-Dashboard zu sichtbaren Hinweisen auf entfernte Bewertungen wegen Diffamierungsbeschwerden.</div>
     </div>
   </section>
 
   <main>
-    <section class="chips" aria-label="Quick-Filter"><button type="button" class="chip" data-chip="banner">🔴 Mit Löschbanner</button><button type="button" class="chip" data-chip="gastro">🍽️ Gastronomie</button><button type="button" class="chip" data-chip="nachtleben">🎉 Nachtleben</button><button type="button" class="chip" data-chip="beauty">💇 Beauty &amp; Wellness</button><button type="button" class="chip" data-chip="hotels">🏨 Beherbergung</button><button type="button" class="chip" data-chip="gesundheit">🏥 Gesundheit</button><button type="button" class="chip" data-chip="altstadt">🗺️ Altstadt</button></section>
+    <section class="chips" aria-label="Quick-Filter">__QUICK_CHIPS__</section>
     <section class="controls is-collapsed" id="dashboardFilterControls" aria-label="Dashboard-Filter">
       <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="false" aria-controls="dashboardFilterControls"><span><strong>Filter</strong><span class="filter-summary" id="filterSummary">Keine aktiven Filter</span></span><span class="filter-toggle-icon" aria-hidden="true">▾</span></button>
       <div class="control search"><label for="searchInput">Suche</label><input id="searchInput" type="search" placeholder="Name, PLZ, Kategorie, Löschbereich …" autocomplete="off"></div>
       <div class="control"><label for="postcodeFilter">PLZ</label><select id="postcodeFilter"><option value="">Alle PLZ</option>__POSTCODE_OPTIONS__</select></div>
-      <div class="control"><label for="bezirkFilter">Bezirk</label><select id="bezirkFilter"><option value="">Alle Bezirke</option>__BEZIRK_OPTIONS__</select></div>
+      <div class="control"><label for="bezirkFilter">__DISTRICT_LABEL__</label><select id="bezirkFilter"><option value="">Alle __DISTRICT_PLURAL__</option>__BEZIRK_OPTIONS__</select></div>
       <div class="control"><label for="bannerFilter">Banner</label><select id="bannerFilter"><option value="all">Alle</option><option value="banner">Mit Banner</option><option value="clean">Ohne Banner</option></select></div>
       <div class="control"><label for="rangeFilter">Gelöscht</label><select id="rangeFilter"><option value="">Alle Bereiche</option>__RANGE_OPTIONS__</select></div>
       <div class="control"><label for="categoryFilter">Kategorie</label><select id="categoryFilter"><option value="">Alle Kategorien</option>__CATEGORY_OPTIONS__</select></div>
@@ -566,15 +579,15 @@ __ANALYTICS__
 
     <section class="card dist" aria-label="Verteilung"><h2>Verteilung der Lösch-Stufen</h2><div id="distribution"></div></section>
 
-    <section class="card bezirk-summary" aria-label="Bezirks-Gruppen"><h2>Gruppierung nach statistischem Bezirk</h2><p>Top-Bezirke im aktuellen Filter, sortiert nach Banner-Anteil. Anklicken setzt den Bezirksfilter.</p><div class="bezirk-list" id="bezirkSummary"></div></section>
+    <section class="card bezirk-summary" aria-label="__DISTRICT_LABEL__-Gruppen"><h2>__DISTRICT_SUMMARY_HEADING__</h2><p>__DISTRICT_SUMMARY_COPY__</p><div class="bezirk-list" id="bezirkSummary"></div></section>
 
     <section class="card bezirk-summary" aria-label="Kategorie-Gruppen"><h2>Gruppierung nach Kategorie</h2><p>Übergeordnete Kategorie-Gruppen im aktuellen Filter, sortiert nach Banner-Anteil.</p><div class="bezirk-list" id="parentSummary"></div></section>
 
     <section class="card map-panel" aria-label="Karte">
       <h2>Karte der erfassten Orte</h2>
-      <p><span id="mapCount">–</span> Orte mit Koordinaten im aktuellen Filter. Marker anklicken markiert Einträge; Bezirksflächen anklicken setzt den Bezirkfilter.</p>
+      <p>__MAP_COPY__</p>
       <div id="placesMap"><div class="map-empty">Karte wird geladen …</div></div>
-      <div class="map-legend"><span><i class="legend-area"></i>Bezirk, klickbar</span><span><i class="legend-dot" style="background:#1f6f8b"></i>dein Standort</span><span><i class="legend-dot" style="background:#c9332c"></i>hohe Lösch-Quote</span><span><i class="legend-dot" style="background:#ef7d16"></i>sichtbarer Banner</span><span><i class="legend-dot" style="background:#2d7b3f"></i>kein sichtbarer Banner</span></div>
+      <div class="map-legend">__MAP_LEGEND__</div>
     </section>
 
     <nav class="tabs" aria-label="Tabellen-Presets">
@@ -594,7 +607,7 @@ __ANALYTICS__
         <thead><tr>
           <th class="rank"><button data-sort="rank">Rang <span class="arrow"></span></button></th>
           <th><button data-sort="name">Name / Google Maps <span class="arrow"></span></button></th>
-          <th><button data-sort="bezirkLabel">Bezirk <span class="arrow"></span></button></th>
+          <th><button data-sort="bezirkLabel">__DISTRICT_LABEL__ <span class="arrow"></span></button></th>
           <th><button data-sort="postcode">PLZ <span class="arrow"></span></button></th>
           <th class="num"><button data-sort="rating">Rating <span class="arrow"></span></button></th>
           <th class="num"><button data-sort="reviewCount">Rezensionen <span class="arrow"></span></button></th>
@@ -628,11 +641,31 @@ __DASHBOARD_JS__
 	return strings.NewReplacer(
 		"Nürnberg", mapsreview.ActiveCity.Name,
 		"NÃ¼rnberg", mapsreview.ActiveCity.Name,
+		`<section class="chips" aria-label="Quick-Filter"><button type="button" class="chip" data-chip="banner">ðŸ”´ Mit LÃ¶schbanner</button><button type="button" class="chip" data-chip="gastro">ðŸ½ï¸ Gastronomie</button><button type="button" class="chip" data-chip="nachtleben">ðŸŽ‰ Nachtleben</button><button type="button" class="chip" data-chip="beauty">ðŸ’‡ Beauty &amp; Wellness</button><button type="button" class="chip" data-chip="hotels">ðŸ¨ Beherbergung</button><button type="button" class="chip" data-chip="gesundheit">ðŸ¥ Gesundheit</button><button type="button" class="chip" data-chip="altstadt">ðŸ—ºï¸ Altstadt</button></section>`,
+		`<section class="chips" aria-label="Quick-Filter">`+quickChips+`</section>`,
+		`<label for="bezirkFilter">Bezirk</label><select id="bezirkFilter"><option value="">Alle Bezirke</option>__BEZIRK_OPTIONS__</select>`,
+		fmt.Sprintf(`<label for="bezirkFilter">%s</label><select id="bezirkFilter"><option value="">Alle %s</option>__BEZIRK_OPTIONS__</select>`, esc(mapsreview.ActiveCity.DistrictLabel), esc(districtPlural)),
+		`<section class="card bezirk-summary" aria-label="Bezirks-Gruppen"><h2>Gruppierung nach statistischem Bezirk</h2><p>Top-Bezirke im aktuellen Filter, sortiert nach Banner-Anteil. Anklicken setzt den Bezirksfilter.</p><div class="bezirk-list" id="bezirkSummary"></div></section>`,
+		fmt.Sprintf(`<section class="card bezirk-summary" aria-label="%s-Gruppen"><h2>%s</h2><p>%s</p><div class="bezirk-list" id="bezirkSummary"></div></section>`, esc(mapsreview.ActiveCity.DistrictLabel), esc(districtSummaryHeading), esc(districtSummaryCopy)),
+		`<p><span id="mapCount">â€“</span> Orte mit Koordinaten im aktuellen Filter. Marker anklicken markiert EintrÃ¤ge; BezirksflÃ¤chen anklicken setzt den Bezirkfilter.</p>`,
+		`<p>`+mapCopy+`</p>`,
+		`<div class="map-legend"><span><i class="legend-area"></i>Bezirk, klickbar</span><span><i class="legend-dot" style="background:#1f6f8b"></i>dein Standort</span><span><i class="legend-dot" style="background:#c9332c"></i>hohe LÃ¶sch-Quote</span><span><i class="legend-dot" style="background:#ef7d16"></i>sichtbarer Banner</span><span><i class="legend-dot" style="background:#2d7b3f"></i>kein sichtbarer Banner</span></div>`,
+		`<div class="map-legend">`+mapLegend+`</div>`,
+		`<th><button data-sort="bezirkLabel">Bezirk <span class="arrow"></span></button></th>`,
+		fmt.Sprintf(`<th><button data-sort="bezirkLabel">%s <span class="arrow"></span></button></th>`, esc(mapsreview.ActiveCity.DistrictLabel)),
+		"__CITY_NAME__", mapsreview.ActiveCity.Name,
+		"__QUICK_CHIPS__", quickChips,
+		"__DISTRICT_LABEL__", mapsreview.ActiveCity.DistrictLabel,
+		"__DISTRICT_PLURAL__", districtPlural,
+		"__DISTRICT_SUMMARY_HEADING__", districtSummaryHeading,
+		"__DISTRICT_SUMMARY_COPY__", districtSummaryCopy,
+		"__MAP_COPY__", mapCopy,
+		"__MAP_LEGEND__", mapLegend,
 		"__POSTCODE_OPTIONS__", postcodeOptions,
 		"__BEZIRK_OPTIONS__", bezirkOptions,
 		"__RANGE_OPTIONS__", rangeOptions,
 		"__CATEGORY_OPTIONS__", categoryOptions,
-		"__DASHBOARD_JS__", dashboardJS,
+		"__DASHBOARD_JS__", makeDashboardJS(),
 		"__ANALYTICS__", plausibleAnalyticsSnippet(),
 		"__ANALYTICS_PRIVACY__", plausiblePrivacyNotice(),
 		"__SNAPSHOT__", time.Now().Format("02.01.2006"),
@@ -684,6 +717,17 @@ func analyticsHost(src string) string {
 	return host
 }
 
+func makeDashboardJS() string {
+	replacer := strings.NewReplacer(
+		"__DISTRICT_LABEL__", mapsreview.ActiveCity.DistrictLabel,
+		"__DISTRICT_LABEL_NONE__", "Ohne "+mapsreview.ActiveCity.DistrictLabel,
+		"__DISTRICT_EMPTY_MESSAGE__", "Keine "+strings.ToLower(mapsreview.ActiveCity.DistrictLabel)+"daten im Filter.",
+		"__CITY_CENTER_LAT__", fmt.Sprintf("%.4f", mapsreview.ActiveCity.CenterLat),
+		"__CITY_CENTER_LNG__", fmt.Sprintf("%.4f", mapsreview.ActiveCity.CenterLng),
+	)
+	return replacer.Replace(dashboardJS)
+}
+
 func allBezirkLabels() []string {
 	bezirke := mapsreview.AllBezirke()
 	out := make([]string, 0, len(bezirke))
@@ -728,6 +772,17 @@ func maxEstimateForRange(data []clientRow, r string) float64 {
 		}
 	}
 	return max
+}
+
+func districtPluralLabel() string {
+	switch mapsreview.ActiveCity.DistrictLabel {
+	case "Bezirk":
+		return "Bezirke"
+	case "Stadtteil":
+		return "Stadtteile"
+	default:
+		return mapsreview.ActiveCity.DistrictLabel + "e"
+	}
 }
 
 func esc(value string) string     { return html.EscapeString(value) }

@@ -5,6 +5,10 @@ const fmt = new Intl.NumberFormat('de-DE');
 const fmt1 = new Intl.NumberFormat('de-DE', { maximumFractionDigits: 1, minimumFractionDigits: 1 });
 const fmt2 = new Intl.NumberFormat('de-DE', { maximumFractionDigits: 2, minimumFractionDigits: 2 });
 const fmtDateTime = new Intl.DateTimeFormat('de-DE', { dateStyle: 'short', timeStyle: 'short' });
+const DISTRICT_LABEL = '__DISTRICT_LABEL__';
+const DISTRICT_NONE_LABEL = '__DISTRICT_LABEL_NONE__';
+const DISTRICT_EMPTY_MESSAGE = '__DISTRICT_EMPTY_MESSAGE__';
+const CITY_CENTER = [__CITY_CENTER_LAT__, __CITY_CENTER_LNG__];
 const state = { mode: 'ratio', sortKey: 'deletionRatioPct', sortDir: 'desc', userLocation: null };
 const els = {
   themeToggle: document.getElementById('themeToggle'), controls: document.getElementById('dashboardFilterControls'), filterToggle: document.getElementById('filterToggle'), filterSummary: document.getElementById('filterSummary'), search: document.getElementById('searchInput'), postcode: document.getElementById('postcodeFilter'), bezirk: document.getElementById('bezirkFilter'), banner: document.getElementById('bannerFilter'), range: document.getElementById('rangeFilter'), category: document.getElementById('categoryFilter'), minReviews: document.getElementById('minReviews'), reset: document.getElementById('resetFilters'), tbody: document.querySelector('#placesTable tbody'), resultCount: document.getElementById('resultCount'), tableTitle: document.getElementById('tableTitle'), mapCount: document.getElementById('mapCount'), nearbyStatus: document.getElementById('nearbyStatus')
@@ -100,7 +104,7 @@ function activeFilterSummary() {
   const parts = [];
   if (els.search.value.trim()) parts.push('Suche');
   if (els.postcode.value) parts.push(els.postcode.value);
-  if (els.bezirk.value) parts.push(els.bezirk.value === '__none__' ? 'Ohne Bezirk' : selectedOptionLabel(els.bezirk));
+  if (els.bezirk.value) parts.push(els.bezirk.value === '__none__' ? DISTRICT_NONE_LABEL : selectedOptionLabel(els.bezirk));
   if (els.banner.value !== 'all') parts.push(selectedOptionLabel(els.banner));
   if (els.range.value) parts.push(els.range.value);
   if (els.category.value) parts.push(selectedOptionLabel(els.category));
@@ -263,7 +267,7 @@ function initMap() {
     return false;
   }
   root.innerHTML = '';
-  placesMap = L.map(root, { scrollWheelZoom: false, touchZoom: true }).setView([49.4521, 11.0767], 12);
+  placesMap = L.map(root, { scrollWheelZoom: false, touchZoom: true }).setView(CITY_CENTER, 12);
   placesMap.createPane('bezirkPane');
   placesMap.getPane('bezirkPane').style.zIndex = 350;
   placesMap.createPane('placeMarkerPane');
@@ -368,7 +372,7 @@ function renderMap(rows, allFilteredRows) {
   } else {
     const districtBounds = bezirkBounds(selectedBezirkLabel());
     if (districtBounds) placesMap.fitBounds(districtBounds.pad(0.18), { maxZoom: 14, animate: false });
-    else placesMap.setView([49.4521, 11.0767], 12);
+    else placesMap.setView(CITY_CENTER, 12);
   }
 }
 function renderBars(id, mode, rows, metric, label, color, maxValue) {
@@ -387,7 +391,7 @@ function renderDistribution(rows) {
 function renderBezirkSummary(rows) {
   const groups = new Map();
   for (const row of rows) {
-    const label = row.bezirkLabel || 'Ohne Bezirk';
+    const label = row.bezirkLabel || DISTRICT_NONE_LABEL;
     if (!groups.has(label)) groups.set(label, { label, rows: 0, banners: 0, removed: 0 });
     const group = groups.get(label);
     group.rows += 1;
@@ -396,8 +400,8 @@ function renderBezirkSummary(rows) {
       group.removed += row.removedEstimate || 0;
     }
   }
-  const items = [...groups.values()].sort((a, b) => (a.label === 'Ohne Bezirk') - (b.label === 'Ohne Bezirk') || (b.banners / Math.max(b.rows, 1)) - (a.banners / Math.max(a.rows, 1)) || b.banners - a.banners || b.rows - a.rows).slice(0, 12);
-  document.getElementById('bezirkSummary').innerHTML = items.map(item => '<button type="button" class="bezirk-row" data-bezirk="' + esc(item.label) + '"><strong>' + esc(item.label) + '</strong><span>' + n(item.rows) + ' Orte</span><span>' + n(item.banners) + ' Banner</span><span>' + pct(item.banners / Math.max(item.rows, 1) * 100) + '</span></button>').join('') || '<p>Keine Bezirksdaten im Filter.</p>';
+  const items = [...groups.values()].sort((a, b) => (a.label === DISTRICT_NONE_LABEL) - (b.label === DISTRICT_NONE_LABEL) || (b.banners / Math.max(b.rows, 1)) - (a.banners / Math.max(a.rows, 1)) || b.banners - a.banners || b.rows - a.rows).slice(0, 12);
+  document.getElementById('bezirkSummary').innerHTML = items.map(item => '<button type="button" class="bezirk-row" data-bezirk="' + esc(item.label) + '"><strong>' + esc(item.label) + '</strong><span>' + n(item.rows) + ' Orte</span><span>' + n(item.banners) + ' Banner</span><span>' + pct(item.banners / Math.max(item.rows, 1) * 100) + '</span></button>').join('') || '<p>' + esc(DISTRICT_EMPTY_MESSAGE) + '</p>';
 }
 function renderParentSummary(rows) {
   const groups = new Map();
@@ -480,7 +484,7 @@ document.querySelectorAll('.bars').forEach(root => root.addEventListener('click'
 document.getElementById('bezirkSummary').addEventListener('click', event => {
   const row = event.target.closest('.bezirk-row');
   if (!row) return;
-  els.bezirk.value = row.dataset.bezirk === 'Ohne Bezirk' ? '__none__' : row.dataset.bezirk;
+  els.bezirk.value = row.dataset.bezirk === DISTRICT_NONE_LABEL ? '__none__' : row.dataset.bezirk;
   render();
   document.getElementById('placesTable').scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
@@ -539,7 +543,6 @@ document.querySelector('.chips').addEventListener('click', event => {
       case 'beauty': els.category.value = 'parent:Beauty & Wellness'; break;
       case 'hotels': els.category.value = 'parent:Beherbergung'; break;
       case 'gesundheit': els.category.value = 'parent:Gesundheit'; break;
-      case 'altstadt': els.bezirk.value = 'Altstadt, St. Lorenz'; break;
     }
   }
   render();
@@ -549,7 +552,6 @@ function updateSubChips(mode) {
   const configs = {
     all: [
       { label: '🔴 Mit Banner', test: () => els.banner.value === 'banner', apply: v => { els.banner.value = v ? 'banner' : 'all'; } },
-      { label: '🗺️ Altstadt', test: () => els.bezirk.value === 'Altstadt, St. Lorenz', apply: v => { els.bezirk.value = v ? 'Altstadt, St. Lorenz' : ''; } },
     ],
     ratio: [
       { label: 'Min. 50 Rez.', test: () => Number(els.minReviews.value) === 50, apply: v => { els.minReviews.value = v ? 50 : 0; } },
@@ -578,7 +580,6 @@ function updateSubChips(mode) {
       { label: 'Min. 500 Rez.', test: () => Number(els.minReviews.value) === 500, apply: v => { els.minReviews.value = v ? 500 : 0; } },
       { label: '🍽️ Nur Gastro', test: () => els.category.value === 'parent:Gastronomie', apply: v => { els.category.value = v ? 'parent:Gastronomie' : ''; } },
       { label: '🏨 Nur Hotels', test: () => els.category.value === 'parent:Beherbergung', apply: v => { els.category.value = v ? 'parent:Beherbergung' : ''; } },
-      { label: '🗺️ Altstadt', test: () => els.bezirk.value === 'Altstadt, St. Lorenz', apply: v => { els.bezirk.value = v ? 'Altstadt, St. Lorenz' : ''; } },
     ],
     nearby: [
       { label: '🔴 Nur mit Banner', test: () => els.banner.value === 'banner', apply: v => { els.banner.value = v ? 'banner' : 'all'; } },
