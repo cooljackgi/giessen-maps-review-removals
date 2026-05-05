@@ -48,6 +48,28 @@ make dashboard
 - `output/charts/giessen_most_removed.md`
 - `output/charts/giessen_most_removed.html`
 
+## GitHub Pages unter Windows
+
+Für Windows liegt ein PowerShell-Deploy-Skript bereit. Es baut die statischen Dateien nach `public/` und aktualisiert den Branch `gh-pages`, ohne deinen aktuellen Arbeitsbranch umzuschalten:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\deploy-pages.ps1
+```
+
+Mit Custom Domain:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\deploy-pages.ps1 -CName "deine-domain.tld"
+```
+
+Danach in GitHub:
+
+1. `Settings`
+2. `Pages`
+3. `Source` -> `Deploy from a branch`
+4. Branch `gh-pages`
+5. Folder `/(root)`
+
 ## Offener Punkt
 
 Wenn du die Stadtteil-/Gebietsflächen im Dashboard wiederhaben willst, muss als Nächstes eine belastbare Gießener Geometriequelle eingebunden werden. Die Codebasis ist dafür bereits so vorbereitet, dass diese Logik separat ergänzt werden kann, ohne die restliche Gießen-Instanz erneut umzubauen.
