@@ -5493,5 +5493,523 @@
     "url": "https://www.google.com/maps/place/Santino%27s+-+Salat+und+mehr/data=!4m7!3m6!1s0x47bc59a2b240ff49:0xd3f3d1fffe5f2c3a!8m2!3d50.5756378!4d8.6830868!16s%2Fg%2F11hdmy56rv!19sChIJSf9AsqJZvEcROixf_v_R89M?authuser=0\u0026hl=de\u0026rclk=1",
     "discoveredPostcode": "35392",
     "discoveredQuery": "pizzeria"
+  },
+  {
+    "id": "0x47bc591f7cd1b0ad:0x1c448faff63e619a",
+    "name": "EAT HAPPY",
+    "url": "https://www.google.com/maps/place/EAT+HAPPY/data=!4m7!3m6!1s0x47bc591f7cd1b0ad:0x1c448faff63e619a!8m2!3d50.586893!4d8.634404!16s%2Fg%2F11khsh08gk!19sChIJrbDRfB9ZvEcRmmE-9q-PRBw?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "sushi"
+  },
+  {
+    "id": "0x47bc598d0ba22bad:0x18844e34db11c025",
+    "name": "EAT HAPPY",
+    "url": "https://www.google.com/maps/place/EAT+HAPPY/data=!4m7!3m6!1s0x47bc598d0ba22bad:0x18844e34db11c025!8m2!3d50.5534671!4d8.6375767!16s%2Fg%2F11pb21899g!19sChIJrSuiC41ZvEcRJcAR2zROhBg?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "sushi"
+  },
+  {
+    "id": "0x47bc58e8812842af:0x6b5ad2190f460669",
+    "name": "Osaka-Sushi-Asia",
+    "url": "https://www.google.com/maps/place/Osaka-Sushi-Asia/data=!4m7!3m6!1s0x47bc58e8812842af:0x6b5ad2190f460669!8m2!3d50.5829005!4d8.667699!16s%2Fg%2F11b620_ngm!19sChIJr0IogehYvEcRaQZGDxnSWms?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "sushi"
+  },
+  {
+    "id": "0x47bc59b386f7be3b:0x2df81c44790087fe",
+    "name": "Schiffenberger Talstation - Mittagspause \u0026 Kaffeeklatsch",
+    "url": "https://www.google.com/maps/place/Schiffenberger+Talstation+-+Mittagspause+%26+Kaffeeklatsch/data=!4m7!3m6!1s0x47bc59b386f7be3b:0x2df81c44790087fe!8m2!3d50.5684334!4d8.6893953!16s%2Fg%2F11y5bbnp55!19sChIJO773hrNZvEcR_ocAeUQc-C0?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "schnitzel"
+  },
+  {
+    "id": "0x47bc59eb50c0290f:0xcad78ba231133ef2",
+    "name": "Gießen Spirits",
+    "url": "https://www.google.com/maps/place/Gie%C3%9Fen+Spirits/data=!4m7!3m6!1s0x47bc59eb50c0290f:0xcad78ba231133ef2!8m2!3d50.5744124!4d8.6720191!16s%2Fg%2F11jhyldfgp!19sChIJDynAUOtZvEcR8j4TMaKL18o?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "bar"
+  },
+  {
+    "id": "0x47bc58ec2225a5f9:0x7fd57aadb28d20bd",
+    "name": "Verein Deutscher Studenten",
+    "url": "https://www.google.com/maps/place/Verein+Deutscher+Studenten/data=!4m7!3m6!1s0x47bc58ec2225a5f9:0x7fd57aadb28d20bd!8m2!3d50.5785612!4d8.6731881!16s%2Fg%2F1tppr21d!19sChIJ-aUlIuxYvEcRvSCNsq161X8?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "bar"
+  },
+  {
+    "id": "0x47bc58ee38926ec7:0xb42aee41ed5f6993",
+    "name": "Mensa Mildred-Harnack-Fish-Haus",
+    "url": "https://www.google.com/maps/place/Mensa+Mildred-Harnack-Fish-Haus/data=!4m7!3m6!1s0x47bc58ee38926ec7:0xb42aee41ed5f6993!8m2!3d50.576315!4d8.669673!16s%2Fg%2F12hwthnbh!19sChIJx26SOO5YvEcRk2lf7UHuKrQ?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "bar"
+  },
+  {
+    "id": "0x47bc59115d124689:0xb8b020056eddcf80",
+    "name": "Hanna Bär",
+    "url": "https://www.google.com/maps/place/Hanna+B%C3%A4r/data=!4m7!3m6!1s0x47bc59115d124689:0xb8b020056eddcf80!8m2!3d50.58194!4d8.6342005!16s%2Fg%2F11c2p_r3_y!19sChIJiUYSXRFZvEcRgM_dbgUgsLg?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "bar"
+  },
+  {
+    "id": "0x47bc58f8c4cfdf93:0x6bb3e05a6a656c3a",
+    "name": "Mack's Restaurant Gießen",
+    "url": "https://www.google.com/maps/place/Mack%27s+Restaurant+Gie%C3%9Fen/data=!4m7!3m6!1s0x47bc58f8c4cfdf93:0x6bb3e05a6a656c3a!8m2!3d50.56748!4d8.65685!16s%2Fg%2F1th7l_yy!19sChIJk9_PxPhYvEcROmxlalrgs2s?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "bar"
+  },
+  {
+    "id": "0x47bcf7db6307a27d:0x26a370d0ef376b1a",
+    "name": "Restaurant Kloster Schiffenberg",
+    "url": "https://www.google.com/maps/place/Restaurant+Kloster+Schiffenberg/data=!4m7!3m6!1s0x47bcf7db6307a27d:0x26a370d0ef376b1a!8m2!3d50.5553712!4d8.7217773!16s%2Fg%2F120zzv1n!19sChIJfaIHY9v3vEcRGms379BwoyY?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "biergarten"
+  },
+  {
+    "id": "0x47bc59a220654083:0xd2f0251ee5ca1eab",
+    "name": "Gaststätte Sennhütte",
+    "url": "https://www.google.com/maps/place/Gastst%C3%A4tte+Sennh%C3%BCtte/data=!4m7!3m6!1s0x47bc59a220654083:0xd2f0251ee5ca1eab!8m2!3d50.5603662!4d8.6210118!16s%2Fg%2F1tfjvcxk!19sChIJg0BlIKJZvEcRqx7K5R4l8NI?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "biergarten"
+  },
+  {
+    "id": "0x47bc5f50715c2899:0xcec1f4a021804b23",
+    "name": "Privatbrauerei Gießen GmbH",
+    "url": "https://www.google.com/maps/place/Privatbrauerei+Gie%C3%9Fen+GmbH/data=!4m7!3m6!1s0x47bc5f50715c2899:0xcec1f4a021804b23!8m2!3d50.61369!4d8.70588!16s%2Fg%2F1v27tm44!19sChIJmShccVBfvEcRI0uAIaD0wc4?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "brauerei"
+  },
+  {
+    "id": "0x47bc5965aaafbf01:0x9344a09cb0e8d4b2",
+    "name": "Lava Lounge",
+    "url": "https://www.google.com/maps/place/Lava+Lounge/data=!4m7!3m6!1s0x47bc5965aaafbf01:0x9344a09cb0e8d4b2!8m2!3d50.6013675!4d8.7071858!16s%2Fg%2F11z9m_s3h1!19sChIJAb-vqmVZvEcRstTosJygRJM?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "lounge"
+  },
+  {
+    "id": "0x47bc59426e186e65:0x19301247f46e5cb1",
+    "name": "Jacques’ Wein-Depot Gießen-Süd",
+    "url": "https://www.google.com/maps/place/Jacques%E2%80%99+Wein-Depot+Gie%C3%9Fen-S%C3%BCd/data=!4m7!3m6!1s0x47bc59426e186e65:0x19301247f46e5cb1!8m2!3d50.5761876!4d8.6627282!16s%2Fg%2F11srgjftf2!19sChIJZW4YbkJZvEcRsVxu9EcSMBk?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "weinstube"
+  },
+  {
+    "id": "0x47bc5f15b55895d1:0xb080d5e455870123",
+    "name": "Wiesecker Kanu-Club",
+    "url": "https://www.google.com/maps/place/Wiesecker+Kanu-Club/data=!4m7!3m6!1s0x47bc5f15b55895d1:0xb080d5e455870123!8m2!3d50.6282932!4d8.6897953!16s%2Fg%2F11b746f6ny!19sChIJ0ZVYtRVfvEcRIwGHVeTVgLA?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc597f77d95e59:0x34ee808f5ff543c4",
+    "name": "Bouleclub Ruhige Kugel (Schwani)",
+    "url": "https://www.google.com/maps/place/Bouleclub+Ruhige+Kugel+%28Schwani%29/data=!4m7!3m6!1s0x47bc597f77d95e59:0x34ee808f5ff543c4!8m2!3d50.5908579!4d8.6893847!16s%2Fg%2F11twdh78m9!19sChIJWV7Zd39ZvEcRxEP1X4-A7jQ?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc57d74f7b2251:0x5ae8761b7d081cab",
+    "name": "Gießen Golden Dragons",
+    "url": "https://www.google.com/maps/place/Gie%C3%9Fen+Golden+Dragons/data=!4m7!3m6!1s0x47bc57d74f7b2251:0x5ae8761b7d081cab!8m2!3d50.5780291!4d8.6822537!16s%2Fg%2F11df0nvj_4!19sChIJUSJ7T9dXvEcRqxwIfRt26Fo?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bcf61d24081d57:0x1a64f9703d042ad7",
+    "name": "ACE 1974 Gießen e.V.",
+    "url": "https://www.google.com/maps/place/ACE+1974+Gie%C3%9Fen+e.V./data=!4m7!3m6!1s0x47bcf61d24081d57:0x1a64f9703d042ad7!8m2!3d50.5917336!4d8.7133179!16s%2Fg%2F11cs43598z!19sChIJVx0IJB32vEcR1yoEPXD5ZBo?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc5f31bdc4c8ab:0x87dad045a510bf40",
+    "name": "Bund der Natur- und Sonnenfreunde Gießen e.V. (Naturist und FKK)",
+    "url": "https://www.google.com/maps/place/Bund+der+Natur-+und+Sonnenfreunde+Gie%C3%9Fen+e.V.+%28Naturist+und+FKK%29/data=!4m7!3m6!1s0x47bc5f31bdc4c8ab:0x87dad045a510bf40!8m2!3d50.6123255!4d8.6785629!16s%2Fg%2F11dxdmyv7n!19sChIJq8jEvTFfvEcRQL8QpUXQ2oc?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58ce28a34a61:0xff8d8b6b6cad6939",
+    "name": "Marine-Verein Gießen 1892 e.V.",
+    "url": "https://www.google.com/maps/place/Marine-Verein+Gie%C3%9Fen+1892+e.V./data=!4m7!3m6!1s0x47bc58ce28a34a61:0xff8d8b6b6cad6939!8m2!3d50.5988783!4d8.6722438!16s%2Fg%2F1hc2631zd!19sChIJYUqjKM5YvEcROWmtbGuLjf8?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58fe2b392adf:0xf98bc0e7433e33f0",
+    "name": "Schwarz-Weiss 1960 Giessen e.V.",
+    "url": "https://www.google.com/maps/place/Schwarz-Weiss+1960+Giessen+e.V./data=!4m7!3m6!1s0x47bc58fe2b392adf:0xf98bc0e7433e33f0!8m2!3d50.5688066!4d8.6497809!16s%2Fg%2F11b6d61jt_!19sChIJ3yo5K_5YvEcR8DM-Q-fAi_k?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc5985454d1069:0xcc0bcba612a87af6",
+    "name": "Schwerathletik Gießen e.V.",
+    "url": "https://www.google.com/maps/place/Schwerathletik+Gie%C3%9Fen+e.V./data=!4m7!3m6!1s0x47bc5985454d1069:0xcc0bcba612a87af6!8m2!3d50.5670908!4d8.6660824!16s%2Fg%2F11hf8__nt4!19sChIJaRBNRYVZvEcR9nqoEqbLC8w?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58e4b806b22b:0xa2a9e05b0962b240",
+    "name": ".",
+    "url": "https://www.google.com/maps/place/data=!4m7!3m6!1s0x47bc58e4b806b22b:0xa2a9e05b0962b240!8m2!3d50.57642!4d8.66018!16s%2Fg%2F11bzymzd92!19sChIJK7IGuORYvEcRQLJiCVvgqaI?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc592ca3bd3b8f:0x3a893a7f9b053088",
+    "name": "Bouleclub Ruhige Kugel",
+    "url": "https://www.google.com/maps/place/Bouleclub+Ruhige+Kugel/data=!4m7!3m6!1s0x47bc592ca3bd3b8f:0x3a893a7f9b053088!8m2!3d50.5664325!4d8.6653402!16s%2Fg%2F11svwx367x!19sChIJjzu9oyxZvEcRiDAFm386iTo?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58d3bf4592a3:0xc1dfd8dc4e5d7e72",
+    "name": "Griechischer Sportverein Hellas Gießen",
+    "url": "https://www.google.com/maps/place/Griechischer+Sportverein+Hellas+Gie%C3%9Fen/data=!4m7!3m6!1s0x47bc58d3bf4592a3:0xc1dfd8dc4e5d7e72!8m2!3d50.5979173!4d8.6680027!16s%2Fg%2F1tjz2gzh!19sChIJo5JFv9NYvEcRcn5dTtzY38E?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58930b571e01:0x4cf24da2858cbbe3",
+    "name": "Männerturnverein 1846 CR Gießen",
+    "url": "https://www.google.com/maps/place/M%C3%A4nnerturnverein+1846+CR+Gie%C3%9Fen/data=!4m7!3m6!1s0x47bc58930b571e01:0x4cf24da2858cbbe3!8m2!3d50.578283!4d8.6823967!16s%2Fg%2F11b77pyngq!19sChIJAR5XC5NYvEcR47uMhaJN8kw?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc594165803dd1:0xe9ca2b8b3f966492",
+    "name": "W.K.St.V. Unitas Maria Montessori Gießen",
+    "url": "https://www.google.com/maps/place/W.K.St.V.+Unitas+Maria+Montessori+Gie%C3%9Fen/data=!4m7!3m6!1s0x47bc594165803dd1:0xe9ca2b8b3f966492!8m2!3d50.5782222!4d8.6698698!16s%2Fg%2F11rg3s09z3!19sChIJ0T2AZUFZvEcRkmSWP4sryuk?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58e4f6ef4bcd:0xf719fe0a65e92043",
+    "name": "autonomes Kulturzentrum AK44",
+    "url": "https://www.google.com/maps/place/autonomes+Kulturzentrum+AK44/data=!4m7!3m6!1s0x47bc58e4f6ef4bcd:0xf719fe0a65e92043!8m2!3d50.57805!4d8.66128!16s%2Fg%2F11bx5q9z6c!19sChIJzUvv9uRYvEcRQyDpZQr-Gfc?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58a306316461:0xe320faa5b97a7fbd",
+    "name": "FC Besa Giessen",
+    "url": "https://www.google.com/maps/place/FC+Besa+Giessen/data=!4m7!3m6!1s0x47bc58a306316461:0xe320faa5b97a7fbd!8m2!3d50.5865301!4d8.6984!16s%2Fg%2F11gbk4dk4v!19sChIJYWQxBqNYvEcRvX96uaX6IOM?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bcf61a424250c7:0xa7bb74e6f5dcbbcf",
+    "name": "1. Bogensportclub Gießen e. V.",
+    "url": "https://www.google.com/maps/place/1.+Bogensportclub+Gie%C3%9Fen+e.+V./data=!4m7!3m6!1s0x47bcf61a424250c7:0xa7bb74e6f5dcbbcf!8m2!3d50.5885834!4d8.7210266!16s%2Fg%2F11g6xhjbn7!19sChIJx1BCQhr2vEcRz7vc9eZ0u6c?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58ceb215a9c1:0x26386b17c541083e",
+    "name": "Roll und Eissportclub Gießen e.V.",
+    "url": "https://www.google.com/maps/place/Roll+und+Eissportclub+Gie%C3%9Fen+e.V./data=!4m7!3m6!1s0x47bc58ceb215a9c1:0x26386b17c541083e!8m2!3d50.59972!4d8.67888!16s%2Fg%2F11c2qlhmvj!19sChIJwakVss5YvEcRPghBxRdrOCY?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58ad518bdd71:0x5b87b5c271a9d44",
+    "name": "VSA Gießen",
+    "url": "https://www.google.com/maps/place/VSA+Gie%C3%9Fen/data=!4m7!3m6!1s0x47bc58ad518bdd71:0x5b87b5c271a9d44!8m2!3d50.6035829!4d8.70137!16s%2Fg%2F1tdy8560!19sChIJcd2LUa1YvEcRRJ0aJ1x7uAU?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc599e435b5aef:0x7c1b0338c0d66e4c",
+    "name": "Segelclub Gießen 84 e.V.",
+    "url": "https://www.google.com/maps/place/Segelclub+Gie%C3%9Fen+84+e.V./data=!4m7!3m6!1s0x47bc599e435b5aef:0x7c1b0338c0d66e4c!8m2!3d50.5666452!4d8.6172456!16s%2Fg%2F11g6yk_f5g!19sChIJ71pbQ55ZvEcRTG7WwDgDG3w?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bcf7cc0271a3e3:0xc652bb01785b203d",
+    "name": "Sporthalle Sophie Scholl Schule / 1. Bogensportclub Gießen",
+    "url": "https://www.google.com/maps/place/Sporthalle+Sophie+Scholl+Schule+%2F+1.+Bogensportclub+Gie%C3%9Fen/data=!4m7!3m6!1s0x47bcf7cc0271a3e3:0xc652bb01785b203d!8m2!3d50.5890062!4d8.7255069!16s%2Fg%2F11rhyxyjkq!19sChIJ46NxAsz3vEcRPSBbeAG7UsY?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc59c17ecd57b5:0x839924b08d2e43ac",
+    "name": "Lahnwiesen Football Team",
+    "url": "https://www.google.com/maps/place/Lahnwiesen+Football+Team/data=!4m7!3m6!1s0x47bc59c17ecd57b5:0x839924b08d2e43ac!8m2!3d50.57981!4d8.65939!16s%2Fg%2F11jq88lmx6!19sChIJtVfNfsFZvEcRrEMujbAkmYM?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc5f4daf1bffff:0x7de4ce57ba9d9c7e",
+    "name": "Wiesecker Kanu Club",
+    "url": "https://www.google.com/maps/place/Wiesecker+Kanu+Club/data=!4m7!3m6!1s0x47bc5f4daf1bffff:0x7de4ce57ba9d9c7e!8m2!3d50.6071964!4d8.6990145!16s%2Fg%2F11q8sltqnb!19sChIJ__8br01fvEcRfpydulfO5H0?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58e502706aff:0x37fbda480d881175",
+    "name": "Aikido Dojo Gießen e.V.",
+    "url": "https://www.google.com/maps/place/Aikido+Dojo+Gie%C3%9Fen+e.V./data=!4m7!3m6!1s0x47bc58e502706aff:0x37fbda480d881175!8m2!3d50.57775!4d8.66234!16s%2Fg%2F11bzypnk2l!19sChIJ_2pwAuVYvEcRdRGIDUja-zc?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc59ab39049053:0x1f0e9c29713f99b2",
+    "name": "Turn- und Sportverein 1889 Gießen-Klein-Linden e.V",
+    "url": "https://www.google.com/maps/place/Turn-+und+Sportverein+1889+Gie%C3%9Fen-Klein-Linden+e.V/data=!4m7!3m6!1s0x47bc59ab39049053:0x1f0e9c29713f99b2!8m2!3d50.56261!4d8.6464301!16s%2Fg%2F11bzypf_m_!19sChIJU5AEOatZvEcRspk_cSmcDh8?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bcf62026d4ee97:0x77cbad62021c5fd0",
+    "name": "RSG Gießen \u0026 Wieseck e.V.",
+    "url": "https://www.google.com/maps/place/RSG+Gie%C3%9Fen+%26+Wieseck+e.V./data=!4m7!3m6!1s0x47bcf62026d4ee97:0x77cbad62021c5fd0!8m2!3d50.58807!4d8.6763!16s%2Fg%2F11bzymbdxh!19sChIJl-7UJiD2vEcR0F8cAmKty3c?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58ef7cde4fab:0x21c10b43e600a830",
+    "name": "Caritas Sozialstation",
+    "url": "https://www.google.com/maps/place/Caritas+Sozialstation/data=!4m7!3m6!1s0x47bc58ef7cde4fab:0x21c10b43e600a830!8m2!3d50.57849!4d8.66611!16s%2Fg%2F11b6dfw1kf!19sChIJq0_efO9YvEcRMKgA5kMLwSE?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc5920ed6eb5b9:0x3af2ea60bc3272ad",
+    "name": "Reit- und Fahrverein Gießen e.V.",
+    "url": "https://www.google.com/maps/place/Reit-+und+Fahrverein+Gie%C3%9Fen+e.V./data=!4m7!3m6!1s0x47bc5920ed6eb5b9:0x3af2ea60bc3272ad!8m2!3d50.58995!4d8.65419!16s%2Fg%2F1v3lp1fm!19sChIJubVu7SBZvEcRrXIyvGDq8jo?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc5f4dbcfb4191:0x67fb81b8ed5a4a4e",
+    "name": "Hessischer Edelkatzen Club e.V.",
+    "url": "https://www.google.com/maps/place/Hessischer+Edelkatzen+Club+e.V./data=!4m7!3m6!1s0x47bc5f4dbcfb4191:0x67fb81b8ed5a4a4e!8m2!3d50.6074823!4d8.6998871!16s%2Fg%2F11bzv1bltr!19sChIJkUH7vE1fvEcRTkpa7biB-2c?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58efb6c588db:0x317006e148458056",
+    "name": "Deutsche Arbeitsgemeinschaft Selbsthilfegruppen e.V.",
+    "url": "https://www.google.com/maps/place/Deutsche+Arbeitsgemeinschaft+Selbsthilfegruppen+e.V./data=!4m7!3m6!1s0x47bc58efb6c588db:0x317006e148458056!8m2!3d50.576822!4d8.6681484!16s%2Fg%2F1tfk3jzt!19sChIJ24jFtu9YvEcRVoBFSOEGcDE?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc5954ba03c773:0x4040fc0e923dbd67",
+    "name": "cooldown.me Gießen",
+    "url": "https://www.google.com/maps/place/cooldown.me+Gie%C3%9Fen/data=!4m7!3m6!1s0x47bc5954ba03c773:0x4040fc0e923dbd67!8m2!3d50.5744124!4d8.6720191!16s%2Fg%2F11wmw8qpxt!19sChIJc8cDulRZvEcRZ709kg78QEA?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bcf65ec45bcd91:0x2a2a17d62bf63b38",
+    "name": "Vogelsberger Höhen Club Zweigverein Gießen e.V.",
+    "url": "https://www.google.com/maps/place/Vogelsberger+H%C3%B6hen+Club+Zweigverein+Gie%C3%9Fen+e.V./data=!4m7!3m6!1s0x47bcf65ec45bcd91:0x2a2a17d62bf63b38!8m2!3d50.574752!4d8.7544193!16s%2Fg%2F11fxzmgtly!19sChIJkc1bxF72vEcRODv2K9YXKio?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc5ed788300315:0x9b130bbef4ad020d",
+    "name": "Porsche Zentrum Gießen",
+    "url": "https://www.google.com/maps/place/Porsche+Zentrum+Gie%C3%9Fen/data=!4m7!3m6!1s0x47bc5ed788300315:0x9b130bbef4ad020d!8m2!3d50.6173839!4d8.6619692!16s%2Fg%2F1tf9xjjy!19sChIJFQMwiNdevEcRDQKt9L4LE5s?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58ef2596a521:0xc91b50e15cf82669",
+    "name": "MVZ Gießen im Martinshof",
+    "url": "https://www.google.com/maps/place/MVZ+Gie%C3%9Fen+im+Martinshof/data=!4m7!3m6!1s0x47bc58ef2596a521:0xc91b50e15cf82669!8m2!3d50.579832!4d8.6682439!16s%2Fg%2F12hkfvw45!19sChIJIaWWJe9YvEcRaSb4XOFQG8k?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58ee266082ed:0xab8ba7240d41c8f",
+    "name": "Familienzentrum für krebskranke Kinder Gießen e.V.",
+    "url": "https://www.google.com/maps/place/Familienzentrum+f%C3%BCr+krebskranke+Kinder+Gie%C3%9Fen+e.V./data=!4m7!3m6!1s0x47bc58ee266082ed:0xab8ba7240d41c8f!8m2!3d50.57531!4d8.66929!16s%2Fg%2F1vpq5_6x!19sChIJ7YJgJu5YvEcRjxzUQHK6uAo?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc5921128dcbf9:0xebab548036adff21",
+    "name": "Team-Qm",
+    "url": "https://www.google.com/maps/place/Team-Qm/data=!4m7!3m6!1s0x47bc5921128dcbf9:0xebab548036adff21!8m2!3d50.5835342!4d8.6680618!16s%2Fg%2F11q39cl0ds!19sChIJ-cuNEiFZvEcRIf-tNoBUq-s?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc5820dd39e38b:0x91a0a80df810a3c7",
+    "name": "Mikado Giessen e.V. - Uni Karateverein - Manfred Dörfler",
+    "url": "https://www.google.com/maps/place/Mikado+Giessen+e.V.+-+Uni+Karateverein+-+Manfred+D%C3%B6rfler/data=!4m7!3m6!1s0x47bc5820dd39e38b:0x91a0a80df810a3c7!8m2!3d50.568124!4d8.6591353!16s%2Fg%2F11b6dfx0zb!19sChIJi-M53SBYvEcRx6MQ-A2ooJE?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58ef2596a521:0x31583fcb9f126457",
+    "name": "Zentrale Notaufnahme (ZNA) - St. Josefs Krankenhaus Balserische Stiftung",
+    "url": "https://www.google.com/maps/place/Zentrale+Notaufnahme+%28ZNA%29+-+St.+Josefs+Krankenhaus+Balserische+Stiftung/data=!4m7!3m6!1s0x47bc58ef2596a521:0x31583fcb9f126457!8m2!3d50.5793616!4d8.6687209!16s%2Fg%2F12jmkf5t1!19sChIJIaWWJe9YvEcRV2QSn8s_WDE?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc59214a83d2e5:0xab2d4343800b1602",
+    "name": "Taekwondo Sportschule Seoul Gießen",
+    "url": "https://www.google.com/maps/place/Taekwondo+Sportschule+Seoul+Gie%C3%9Fen/data=!4m7!3m6!1s0x47bc59214a83d2e5:0xab2d4343800b1602!8m2!3d50.5736971!4d8.6902781!16s%2Fg%2F11s3vs_49w!19sChIJ5dKDSiFZvEcRAhYLgENDLas?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58ef3717d1a5:0x6ccf7789d6c88a69",
+    "name": "Radiologie in Gießen",
+    "url": "https://www.google.com/maps/place/Radiologie+in+Gie%C3%9Fen/data=!4m7!3m6!1s0x47bc58ef3717d1a5:0x6ccf7789d6c88a69!8m2!3d50.57982!4d8.6682901!16s%2Fg%2F11g6z4qq8x!19sChIJpdEXN-9YvEcRaYrI1ol3z2w?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc5fb3029d1ae1:0xda69d4bcaa67a58f",
+    "name": "Pferdefreunde Sternenreiter Gießen e.V.",
+    "url": "https://www.google.com/maps/place/Pferdefreunde+Sternenreiter+Gie%C3%9Fen+e.V./data=!4m7!3m6!1s0x47bc5fb3029d1ae1:0xda69d4bcaa67a58f!8m2!3d50.5561047!4d8.6480252!16s%2Fg%2F11hdjgkkv8!19sChIJ4RqdArNfvEcRj6VnqrzUado?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x833d926ded4d270f:0xb13d25754fbfc181",
+    "name": "bierpong.giessen",
+    "url": "https://www.google.com/maps/place/bierpong.giessen/data=!4m7!3m6!1s0x833d926ded4d270f:0xb13d25754fbfc181!8m2!3d50.3271854!4d8.6115361!16s%2Fg%2F11s0wjld8q!19sChIJDydN7W2SPYMRgcG_T3UlPbE?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58f02a75f7c3:0x1f64f04f9a5284c",
+    "name": "Universitätsklinikum Gießen Kinderkardiologie",
+    "url": "https://www.google.com/maps/place/Universit%C3%A4tsklinikum+Gie%C3%9Fen+Kinderkardiologie/data=!4m7!3m6!1s0x47bc58f02a75f7c3:0x1f64f04f9a5284c!8m2!3d50.5756326!4d8.6669466!16s%2Fg%2F1tfy_71w!19sChIJw_d1KvBYvEcRTCil-QRP9gE?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58efffd161f1:0xde702274d4110f99",
+    "name": "Deutsches Zentrum für Lungenforschung e.V.",
+    "url": "https://www.google.com/maps/place/Deutsches+Zentrum+f%C3%BCr+Lungenforschung+e.V./data=!4m7!3m6!1s0x47bc58efffd161f1:0xde702274d4110f99!8m2!3d50.5719984!4d8.6648904!16s%2Fg%2F1hc59x3nd!19sChIJ8WHR_-9YvEcRmQ8R1HQicN4?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58dd6c553fe5:0x7ec11d64336fc204",
+    "name": "Team Simon GmbH",
+    "url": "https://www.google.com/maps/place/Team+Simon+GmbH/data=!4m7!3m6!1s0x47bc58dd6c553fe5:0x7ec11d64336fc204!8m2!3d50.593594!4d8.718675!16s%2Fg%2F1ptydx2d5!19sChIJ5T9VbN1YvEcRBMJvM2QdwX4?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bcf704df7ce88f:0x75ee10b2021ca90c",
+    "name": "Amateurfunk-Ortsverein Gießen, F07, DARC e.V., mit Clubstation DLØGH",
+    "url": "https://www.google.com/maps/place/Amateurfunk-Ortsverein+Gie%C3%9Fen,+F07,+DARC+e.V.,+mit+Clubstation+DL%C3%98GH/data=!4m7!3m6!1s0x47bcf704df7ce88f:0x75ee10b2021ca90c!8m2!3d50.5497635!4d8.7630453!16s%2Fg%2F11f15k47q2!19sChIJj-h83wT3vEcRDKkcArIQ7nU?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58eff370fb81:0x334ec906b37747d6",
+    "name": "Justus-Liebig-Universität Giessen Klinik Frauenheilkunde und Geburtshilfe",
+    "url": "https://www.google.com/maps/place/Justus-Liebig-Universit%C3%A4t+Giessen+Klinik+Frauenheilkunde+und+Geburtshilfe/data=!4m7!3m6!1s0x47bc58eff370fb81:0x334ec906b37747d6!8m2!3d50.5770908!4d8.6653709!16s%2Fg%2F12qh7jtfr!19sChIJgftw8-9YvEcR1kd3swbJTjM?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58fb20cb0a6d:0x6afc8a5fdf110bfa",
+    "name": "verein zur förderung der vogelmedizin gießen ev",
+    "url": "https://www.google.com/maps/place/verein+zur+f%C3%B6rderung+der+vogelmedizin+gie%C3%9Fen+ev/data=!4m7!3m6!1s0x47bc58fb20cb0a6d:0x6afc8a5fdf110bfa!8m2!3d50.57468!4d8.661218!16s%2Fg%2F11c1tkf03r!19sChIJbQrLIPtYvEcR-gsR31-K_Go?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x47bc58a6cf54ed87:0x443a72d46cd2952c",
+    "name": "Sk 1858 Gießen",
+    "url": "https://www.google.com/maps/place/Sk+1858+Gie%C3%9Fen/data=!4m7!3m6!1s0x47bc58a6cf54ed87:0x443a72d46cd2952c!8m2!3d50.5887!4d8.70479!16s%2Fg%2F11fp1sxt28!19sChIJh-1Uz6ZYvEcRLJXSbNRyOkQ?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0x2f23b1c0d03b64d3:0xe28921e4011c0c29",
+    "name": "HirschModding",
+    "url": "https://www.google.com/maps/place/HirschModding/data=!4m7!3m6!1s0x2f23b1c0d03b64d3:0xe28921e4011c0c29!8m2!3d52.3796596!4d9.7614714!16s%2Fg%2F11rnk4tn59!19sChIJ02Q70MCxIy8RKQwcAeQhieI?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "club"
+  },
+  {
+    "id": "0xab96d846dbf1e9:0xe7fdc563aa0ac3f",
+    "name": "Blow up Club",
+    "url": "https://www.google.com/maps/place/Blow+up+Club/data=!4m7!3m6!1s0xab96d846dbf1e9:0xe7fdc563aa0ac3f!8m2!3d50.6452698!4d8.7031027!16s%2Fg%2F11w2kttsm2!19sChIJ6fHbRtiWqwARP6ygOlbcfw4?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "nachtclub"
+  },
+  {
+    "id": "0x47bc5f31182c82f5:0x648b9d0daa86e126",
+    "name": "Cannabis Social Club Wettenberg",
+    "url": "https://www.google.com/maps/place/Cannabis+Social+Club+Wettenberg/data=!4m7!3m6!1s0x47bc5f31182c82f5:0x648b9d0daa86e126!8m2!3d50.6379149!4d8.6784003!16s%2Fg%2F11lw82lpsb!19sChIJ9YIsGDFfvEcRJuGGqg2di2Q?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "nachtclub"
+  },
+  {
+    "id": "0x47bc5961703a042b:0xd70de7dc48b9a765",
+    "name": "Silvesterlauf Giessen- Start",
+    "url": "https://www.google.com/maps/place/Silvesterlauf+Giessen-+Start/data=!4m7!3m6!1s0x47bc5961703a042b:0xd70de7dc48b9a765!8m2!3d50.5773595!4d8.6927404!16s%2Fg%2F11lshzb7g1!19sChIJKwQ6cGFZvEcRZae5SNznDdc?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "nachtclub"
+  },
+  {
+    "id": "0x47bc58db5c49cf87:0xe78a2509eb76d6b6",
+    "name": "Gießener Ruderclub Hassia 1906 e.V.",
+    "url": "https://www.google.com/maps/place/Gie%C3%9Fener+Ruderclub+Hassia+1906+e.V./data=!4m7!3m6!1s0x47bc58db5c49cf87:0xe78a2509eb76d6b6!8m2!3d50.590915!4d8.66849!16s%2Fg%2F11b7g2mnn9!19sChIJh89JXNtYvEcRttZ26wkliuc?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "nachtclub"
+  },
+  {
+    "id": "0x47bc59003381f439:0xde42653b55e02a83",
+    "name": "Lahn-River-Wheelers",
+    "url": "https://www.google.com/maps/place/Lahn-River-Wheelers/data=!4m7!3m6!1s0x47bc59003381f439:0xde42653b55e02a83!8m2!3d50.568649!4d8.648161!16s%2Fg%2F1jkxsmnsd!19sChIJOfSBMwBZvEcRgyrgVTtlQt4?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "nachtclub"
+  },
+  {
+    "id": "0x47bc58292a69c6e3:0x90b40464ed87782c",
+    "name": "Hotel Anker \u0026 Restaurant Tiramisu",
+    "url": "https://www.google.com/maps/place/Hotel+Anker+%26+Restaurant+Tiramisu/data=!4m10!3m9!1s0x47bc58292a69c6e3:0x90b40464ed87782c!5m2!4m1!1i2!8m2!3d50.5295075!4d8.6474137!16s%2Fg%2F1trsx2zz!19sChIJ48ZpKilYvEcRLHiH7WQEtJA?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "hotel"
+  },
+  {
+    "id": "0x47bcf7eb3aed24b7:0x791e61f389f0f024",
+    "name": "Hotel Restaurant Goldener Stern",
+    "url": "https://www.google.com/maps/place/Hotel+Restaurant+Goldener+Stern/data=!4m10!3m9!1s0x47bcf7eb3aed24b7:0x791e61f389f0f024!5m2!4m1!1i2!8m2!3d50.53667!4d8.71901!16s%2Fg%2F1tx464fk!19sChIJtyTtOuv3vEcRJPDwifNhHnk?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "hotel"
+  },
+  {
+    "id": "0x47bcf7ef34f01879:0x1395f2a698c114da",
+    "name": "„Zur Krone“ Hotel- und Gaststättenbetrieb GmbH",
+    "url": "https://www.google.com/maps/place/%E2%80%9EZur+Krone%E2%80%9C+Hotel-+und+Gastst%C3%A4ttenbetrieb+GmbH/data=!4m10!3m9!1s0x47bcf7ef34f01879:0x1395f2a698c114da!5m2!4m1!1i2!8m2!3d50.535637!4d8.7075412!16s%2Fg%2F1th5hkr0!19sChIJeRjwNO_3vEcR2hTBmKbylRM?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "hotel"
+  },
+  {
+    "id": "0x47bc581b599cfbdb:0x2bcfd2d5dc35006a",
+    "name": "Landgasthof Zum Löwen „beim Philipp“",
+    "url": "https://www.google.com/maps/place/Landgasthof+Zum+L%C3%B6wen+%E2%80%9Ebeim+Philipp%E2%80%9C/data=!4m10!3m9!1s0x47bc581b599cfbdb:0x2bcfd2d5dc35006a!5m2!4m1!1i2!8m2!3d50.5279267!4d8.6759003!16s%2Fg%2F1tdr2dzn!19sChIJ2_ucWRtYvEcRagA13NXSzys?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "hotel"
+  },
+  {
+    "id": "0x47bcf70a96208c91:0x2905f2f1877e16ae",
+    "name": "'Klein und Fein' Garbenteich",
+    "url": "https://www.google.com/maps/place/%27%27Klein+und+Fein%27+Garbenteich%27/data=!4m10!3m9!1s0x47bcf70a96208c91:0x2905f2f1877e16ae!5m2!4m1!1i2!8m2!3d50.539093!4d8.748815!16s%2Fg%2F11j0q4gmsf!19sChIJkYwglgr3vEcRrhZ-h_HyBSk?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "hotel"
+  },
+  {
+    "id": "0x47bc58e8b216580d:0x2204adf63630e208",
+    "name": "SWEEDSTUDIO | Friseursalon und Kosmetikstudio Gießen",
+    "url": "https://www.google.com/maps/place/SWEEDSTUDIO+%7C+Friseursalon+und+Kosmetikstudio+Gie%C3%9Fen/data=!4m7!3m6!1s0x47bc58e8b216580d:0x2204adf63630e208!8m2!3d50.58069!4d8.6675!16s%2Fg%2F11bzyn5jyw!19sChIJDVgWsuhYvEcRCOIwNvatBCI?authuser=0\u0026hl=de\u0026rclk=1",
+    "discoveredPostcode": "35392",
+    "discoveredQuery": "friseur"
   }
 ]
