@@ -1,10 +1,10 @@
 # Gießen - Orte sortiert nach geschätzter Anzahl entfernter Bewertungen
 
-Quelle: Google Maps, öffentlich sichtbare Diffamierungs-Banner. Snapshot: 05.05.2026.
+Quelle: Google Maps, öffentlich sichtbare Diffamierungs-Banner. Snapshot: 06.05.2026.
 
 Sortierung: geschätzter Mittelpunkt der Google-Bereiche absteigend. „Über 250“ wird als 300 geschätzt.
 
-Einträge mit Banner: 62
+Einträge mit Banner: 63
 
 | Rang | Name | PLZ | Rating | Rezensionen | Gelöscht | Schätzwert | Löschquote | Worst-Case-Rating |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|
@@ -62,11 +62,12 @@ Einträge mit Banner: 62
 | 52 | Zum Schnitt | 35390 | 4,8 | 87 | 2–5 | 3,5 | 3,9% | 4,65 |
 | 53 | Unikat Gießen – Premium Friseur ohne Termin \| Stil & Präzision | 35390 | 4,8 | 67 | 2–5 | 3,5 | 5,0% | 4,61 |
 | 54 | Uzbek Haus | 35392 | 4,7 | 51 | 2–5 | 3,5 | 6,4% | 4,46 |
-| 55 | burgerme Gießen | 35390 | 4,7 | 32 | 2–5 | 3,5 | 9,9% | 4,33 |
-| 56 | Kelmendi Giessen Balkan Spezialitãten | 35390 | 4,9 | 20 | 2–5 | 3,5 | 14,9% | 4,32 |
-| 57 | Millerhaus | 35390 | 4,1 | 3.770 | 1 | 1,0 | 0,0% | 4,10 |
-| 58 | Restaurant & Pizzeria Olive Gießen | 35390 | 4,3 | 1.017 | 1 | 1,0 | 0,1% | 4,30 |
-| 59 | Esso | 35390 | 4,1 | 300 | 1 | 1,0 | 0,3% | 4,09 |
-| 60 | TRINITY Club | 35390 | 3,8 | 140 | 1 | 1,0 | 0,7% | 3,78 |
-| 61 | New'Ro Kitchen | 35390 | 4,9 | 61 | 1 | 1,0 | 1,6% | 4,84 |
-| 62 | SPORT-HAUS Gießen | 35390 | 5,0 | 54 | 1 | 1,0 | 1,8% | 4,93 |
+| 55 | Bechthold Metzgerei & Partyservice GmbH & Co. KG | 35392 | 4,5 | 41 | 2–5 | 3,5 | 7,9% | 4,22 |
+| 56 | burgerme Gießen | 35390 | 4,7 | 32 | 2–5 | 3,5 | 9,9% | 4,33 |
+| 57 | Kelmendi Giessen Balkan Spezialitãten | 35390 | 4,9 | 20 | 2–5 | 3,5 | 14,9% | 4,32 |
+| 58 | Millerhaus | 35390 | 4,1 | 3.770 | 1 | 1,0 | 0,0% | 4,10 |
+| 59 | Restaurant & Pizzeria Olive Gießen | 35390 | 4,3 | 1.017 | 1 | 1,0 | 0,1% | 4,30 |
+| 60 | Esso | 35390 | 4,1 | 300 | 1 | 1,0 | 0,3% | 4,09 |
+| 61 | TRINITY Club | 35390 | 3,8 | 140 | 1 | 1,0 | 0,7% | 3,78 |
+| 62 | New'Ro Kitchen | 35390 | 4,9 | 61 | 1 | 1,0 | 1,6% | 4,84 |
+| 63 | SPORT-HAUS Gießen | 35390 | 5,0 | 54 | 1 | 1,0 | 1,8% | 4,93 |
